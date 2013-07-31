@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This file contains a snippet of config.xml from jenkins to use the LXC based slaves -->
+<hudson>
+  <slaves>
+    <slave>
+      <name>lxc-jenkins-slave1</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave1 -f /home/odp/jenkinslxc/slave1/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave2</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave2 -f /home/odp/jenkinslxc/slave2/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave3</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave3 -f /home/odp/jenkinslxc/slave3/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave4</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave4 -f /home/odp/jenkinslxc/slave4/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave5</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave5 -f /home/odp/jenkinslxc/slave5/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave6</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave6 -f /home/odp/jenkinslxc/slave6/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+    <slave>
+      <name>lxc-jenkins-slave7</name>
+      <description></description>
+      <remoteFS>/home/odp/jenkinsslave</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>EXCLUSIVE</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.CommandLauncher">
+        <agentCommand>ssh odp@jenkins.opendaylight.org -- sudo lxc-execute -n slave7 -f /home/odp/jenkinslxc/slave7/config /home/odp/jenkinslxc/slave.sh</agentCommand>
+      </launcher>
+      <label>slaves</label>
+      <nodeProperties>
+        <hudson.tools.ToolLocationNodeProperty>
+          <locations>
+            <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+              <type>hudson.model.JDK$DescriptorImpl</type>
+              <name>openJDK7</name>
+              <home>/usr/lib/jvm/java-7-openjdk-amd64</home>
+            </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          </locations>
+        </hudson.tools.ToolLocationNodeProperty>
+      </nodeProperties>
+    </slave>
+  </slaves>
+</hudson>
+
+
+
+
+
+
+
+
+

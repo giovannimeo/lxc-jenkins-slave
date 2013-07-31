@@ -1,0 +1,10 @@
+# uncomment the next line to run the container unconfined:
+lxc.utsname = jenkins
+lxc.network.type = veth
+lxc.network.name = eth0
+lxc.network.ipv4 =10.0.3.201/24
+lxc.network.link =lxcbr0
+lxc.network.flags = up
+lxc.mount.entry = /home/odp/jenkinslxc/slave1/rootfs/home/odp/jenkinsslave /home/odp/jenkinsslave none rw,bind 0 0
+lxc.mount.entry = /home/odp/jenkinslxc/slave1/rootfs/home/odp/.ssh /home/odp/.ssh none rw,bind 0 0
+lxc.mount.entry = /home/odp/jenkinslxc/slave1/rootfs/home/odp/.gitconfig /home/odp/.gitconfig none rw,bind 0 0
